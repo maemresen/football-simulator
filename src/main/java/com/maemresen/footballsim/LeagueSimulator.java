@@ -7,12 +7,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.Scanner;
 
 public class LeagueSimulator {
 
     public static void main(String[] args) throws FileNotFoundException, IOException, URISyntaxException {
-        URL resource = LeagueSimulator.class.getClassLoader().getResource("premier_league_players.txt");
+        URL resource = LeagueSimulator.class.getClassLoader().getResource("players_db.txt");
         if (resource == null) {
             throw new IllegalArgumentException("file not found!");
         }
